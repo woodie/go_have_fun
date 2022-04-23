@@ -26,7 +26,6 @@ func map_include[K comparable, V any](m map[K]V, key K) bool {
 func ternary[T any](expr bool, yay, nay T) T {
 	if expr {
 		return yay
-	} else {
-		return nay
 	}
+	return nay
 }

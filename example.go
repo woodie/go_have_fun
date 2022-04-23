@@ -8,8 +8,8 @@ import (
 
 func use_string_map() {
 	string_map := make(map[string]string)
-  string_map["foo"] = "bar"
-  string_map["bar"] = "baz"
+	string_map["foo"] = "bar"
+	string_map["bar"] = "baz"
 	fmt.Println(fun.map_keys[string, string](string_map))
 	fmt.Println(fun.map_values[string, string](string_map))
 	fmt.Println(fun.map_include[string, string](string_map, "foo"))
@@ -17,9 +17,9 @@ func use_string_map() {
 }
 
 func use_string_set() {
-	string_set:= make(map[string]bool)
-  string_set["this"] = true
-  string_set["that"] = true
+	string_set := make(map[string]bool)
+	string_set["this"] = true
+	string_set["that"] = true
 	fmt.Println(fun.map_keys[string, bool](string_set))
 	fmt.Println(fun.map_include[string, bool](string_set, "this"))
 	fmt.Println(fun.map_include[string, bool](string_set, "more"))
